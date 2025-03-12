@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Text with Two Backgrounds</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Section for Parallax Background */
+        .parallax {
+            position: relative;
+            height: 100vh; /* Full height of the viewport */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Parallax effect */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* First Parallax Background */
+        .img1 {
+            background-image: url('https://i.pinimg.com/736x/fc/bf/ae/fcbfaedbfbf56c542e0fff2030de3cc1.jpg');
+        }
+
+        /* Second Parallax Background */
+        .img2 {
+            background-image: url('https://i.pinimg.com/736x/11/80/36/11803693cdba27b96c42318d807c972c.jpg');
+        }
+
+        /* Centered Text */
+        .parallax h1 {
+            color: white;
+            font-size: 3rem;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        /* Extra Content */
+        .content {
+            padding: 50px;
+            text-align: center;
+            font-size: 1.5rem;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- First Parallax Section with Image 1 -->
+    <div class="parallax img1">
+        <h1>เธอทำให้</h1>
+    </div>
+
+    <!-- Extra Content Section -->
+    <div class="content">
+        <p>เลื่อนลงมาเพื่อดูเอฟเฟกต์พารัลแลกซ์...</p>
+    </div>
+
+    <!-- Second Parallax Section with Image 2 -->
+    <div class="parallax img2">
+        <h1>ฉันเปลี่ยนไป</h1>
+    </div>
+
+</body>
+</html>
