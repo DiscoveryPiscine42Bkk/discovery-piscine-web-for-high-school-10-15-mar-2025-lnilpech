@@ -1,0 +1,12 @@
+body,html {
+    width: 100vw;
+    height: 100vh;
+}
+table,th,td{
+    border: 1px solid black;
+    height: 100%;
+    width: 50%;
+    text-align: left;
+    font-size: large;
+
+}
