@@ -19,6 +19,10 @@
         max-width: 95%;
         padding: 1.25rem;
     }
+    .gallery {
+        width: 500%;
+        margin: 0.625rem 0;
+    }
 }
 
 ul {
@@ -123,10 +127,14 @@ h2 {
     align-items: center;
 }
 
+.fav{
+    padding-top: 3.125rem;
+}
+
 .Profile {
     border-radius: 360px;
-    width: 0.3125rem;
-    height: 0.3125rem;
+    width: 5rem;
+    height: 4.5rem;
 }
 
 td {
@@ -134,8 +142,7 @@ td {
 }
 
 table {
-    width: 3.125rem;
-    height: 3.125rem;
+    padding: 1.5625rem;
 }
 
 .PI {
@@ -148,27 +155,62 @@ table {
     text-align: center;
 }
 
+/* แก้ไข .gallery เพื่อจัดตำแหน่งให้อยู่กลาง */
+.background1 {
+    height: 50rem;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* จัดแกลเลอรี่ให้อยู่กลาง */
+    align-items: center;
+    background-color: aliceblue;
+}
+#certificates {
+    display: flex;
+    justify-content: center; /* จัดทั้งหมดใน .gallery ให้อยู่กลาง */
+    flex-wrap: wrap;  /* ให้องค์ประกอบใน .gallery จัดเรียงใหม่เมื่อหน้าจอเล็ก */
+    gap: 1.25rem; /* เพิ่มระยะห่างระหว่างแกลเลอรี่ */
+    padding: 2.5rem 0;
+}
+
+/* ปรับ .gallery */
 div.gallery {
-    display: inline-block;
-    width: 45%;
+    width: 45%; /* ขนาดของแต่ละแกลเลอรี่ */
     margin: 10px;
     border: 1px solid #afd2e9;
- }
- 
- 
- div.gallery:hover {
-    border: 1px solid #add6ff;
- }
- 
- 
- div.gallery img {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* จัดภาพและข้อความให้อยู่กลาง */
+    justify-content: center;
+    text-align: center;
+}
+
+div.gallery img {
+    width: 100%; /* ขนาดภาพให้พอดีกับขนาดของ .gallery */
     height: auto;
- }
- 
- 
- div.desc {
+}
+
+div.gallery:hover {
+    border: 1px solid #add6ff;
+}
+
+div.desc {
     padding: 15px;
     text-align: center;
- }
- 
+}
+
+.background2 {
+    background-size: cover; /* ทำให้ภาพขยายให้เต็มหน้าจอ */
+    background-position: center; /* ตั้งค่าพื้นหลังให้อยู่กลาง */
+    background-attachment: fixed; /* ทำให้พื้นหลังคงที่เมื่อเลื่อน */
+    height: 50rem; /* กำหนดความสูงของพื้นหลัง */
+    width: 100%; /* ทำให้กว้างเต็มหน้าจอ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue; /* สีพื้นหลังในกรณีที่ภาพไม่สามารถโหลดได้ */
+}
