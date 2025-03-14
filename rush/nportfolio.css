@@ -2,18 +2,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @media screen and (max-width: 48rem) {
+
     ul {
-        flex-direction: column;
+        flex-direction: row-reverse;
         text-align: center;
     }
 
     .texthi {
         padding: 1.875rem;
         max-width: 95%;
-    }
+    
+}
+
+    table {
+        display: flex;
+        border:#333;
+        border: 10rem;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        width: 50rem;
+        line-height: 1.8rem;
+        justify-content: center;
+        border-collapse: collapse;
+            
+        }
 
     .content {
         max-width: 95%;
@@ -27,8 +44,21 @@
 
 /*$ set*/
 
+body {
+    padding-top: 60px;
+}
 
-
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(51, 51, 51, 0.8); /* สีพื้นหลังโปร่งแสง */
+    backdrop-filter: blur(10px); /* เอฟเฟกต์เบลอเมื่อ Scroll */
+    transition: background 0.4s ease-in-out; /* ทำให้ Smooth */
+    padding: 10px 0;
+    z-index: 1000;
+}
 
 /* nav bar*/
 ul {
@@ -71,7 +101,8 @@ li a:hover:not(.active) {
 }
 
 .active {
-    background-color: #000;
+    background-color: #333;
+    color: white;
 }
 /*$ nav bar*/
 
@@ -92,20 +123,6 @@ li a:hover:not(.active) {
     opacity: 1.0;
 }
 
-.backgroundinfo {
-    height: 50rem;
-    width: 100%;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: aliceblue;
-}
-
 /* Text Box */
 .Hometext{
     background-color: aliceblue;
@@ -121,7 +138,7 @@ li a:hover:not(.active) {
 
 /* Content Section */
 .content1 {
-    background-color: black;
+    background-color: #333;
     color: white;
     height: 3.125rem;
 }
@@ -138,16 +155,18 @@ h2 {
 
 .tel {
     align-items: center;
-}
-
-.fav{
-    padding-top: 3.125rem;
+    width: 15rem;
+    display: flex;
+    align-items: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+    gap: 10px; /* เพิ่มระยะห่างระหว่างรูปกับข้อความ */
 }
 
 .Profile {
+    object-fit: cover;
+    object-position: center;
     border-radius: 360px;
-    width: 5rem;
-    height: 4.5rem;
+    width: 7.5rem;
+    height: 7.5rem;
 }
 
 td {
@@ -155,17 +174,16 @@ td {
 }
 
 table {
-    padding: 1.5625rem;
-}
-
-.PI {
-    padding: 3.125rem;
-    color: #000;
-    font-weight: bold;
-    border-radius: 0.625rem;
-    width: 31.25rem;
-    margin: 31.25rem;
-    text-align: center;
+    display: flex;
+    border:#333;
+    border: 10rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    width: 50rem;
+    line-height: 1.8rem;
+    justify-content: center;
+    
 }
 
 
@@ -181,12 +199,12 @@ table {
 div.gallery {
     width: 45%; /* ขนาดของแต่ละแกลเลอรี่ */
     margin: 10px;
-    border: 1px solid #afd2e9;
+    border: 4px solid whitesmoke;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* จัดภาพและข้อความให้อยู่กลาง */
-    justify-content: center;
-    text-align: center;
+    padding: 4px;
+
 }
 
 div.gallery img {
@@ -201,12 +219,33 @@ div.gallery:hover {
 div.desc {
     padding: 15px;
     text-align: center;
+    color: black;
+    background-color: whitesmoke;
 }
 
 .background2 {
-    background-color: white;
-    background-size: cover; /* ทำให้ภาพขยายให้เต็มหน้าจอ */
-    background-position: center; /* ตั้งค่าพื้นหลังให้อยู่กลาง */
-    background-attachment: fixed; /* ทำให้พื้นหลังคงที่เมื่อเลื่อน */
+   text-align: center;
+   height: auto ;
+   align-items: center;
+}
 
+.cert{       
+    color: #ffffff;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgb(60,106,128);
+    border:1.2rem;
+    box-shadow: #333;
+}
+
+.headcont{
+    text-align: center;
+    color: #000;
+    padding: 2rem 0;
+
+}
+
+.contact{
+    padding-bottom: 4rem;
 }
