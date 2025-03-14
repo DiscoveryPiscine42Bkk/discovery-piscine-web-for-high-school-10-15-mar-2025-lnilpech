@@ -1,8 +1,24 @@
 * {
-    margin: 0; /*set none margin*/
-    padding: 0; /*set web none padding*/
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    
+}
+
+@media screen and (max-width: 48rem) {
+    ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texthi {
+        padding: 1.875rem;
+        max-width: 95%;
+    }
+
+    .content {
+        max-width: 95%;
+        padding: 1.25rem;
+    }
 }
 
 ul {
@@ -15,18 +31,28 @@ ul {
     top: 0;
     width: 100%;
     position: sticky;
+    left: 0;
+    z-index: 1000;
     font-family: initial;
+    display: flex;
+    justify-content: space-between; /* กระจายเมนูไปคนละด้าน */
+    align-items: center;
+    padding: 0 1.25rem;
 }
 
-li {
-    float: right;
+ul li {
+    display: inline;
 }
 
-li a {
+ul li:first-child {
+    margin-right: auto; /* ให้ "Lakkeaw Portfolio" ไปชิดซ้าย */
+}
+
+ul li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0.875rem 1rem;
     text-decoration: none;
 }
 
@@ -38,16 +64,111 @@ li a:hover:not(.active) {
     background-color: #000;
 }
 
+/* Background Section */
+.background {
+    height: 31.25rem;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+}
 
-/* */
+.bg1 {
+    background-image: url(https://media.discordapp.net/attachments/1350036294511628328/1350036781122195527/1.jpeg?ex=67d5473b&is=67d3f5bb&hm=f92346aa628223b24a8fdb8f6bf5015012c443da117163923f7afcad2e9d1410&=&format=webp&width=1104&height=1104);
+    opacity: 1.0;
+}
 
-.parallax {
-    background-color: #36453b;
-    height: 50vh;
-    position: relative; /*same position*/
-    background-size: cover; /*resize screen*/
-    background-position: center; /*bacground image must be center*/
-    background-attachment: fixed; /* Parallax effect */
-    display: flex; /*can put text on*/
+.bg2 {
+    background-color: azure;
+}
+
+.bg3 {
+    background-color: rgb(62, 114, 116);
+    opacity: 1.0;
+    color: aliceblue;
+}
+
+/* Text Box */
+.texthi {
+    padding: 3.125rem;
+    color: #000;
+    font-weight: bold;
+    background-color: aliceblue;
+    border-radius: 0.625rem;
+    width: 31.25rem;
+    margin: auto;
+    text-align: center;
+}
+
+/* Content Section */
+.content1 {
+    background-color: black;
+    color: white;
+    height: 3.125rem;
+}
+
+.icon {
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+h2 {
+    text-align: center;
+    color: aliceblue;
+}
+
+.tel {
+    align-items: center;
+}
+
+.Profile {
+    border-radius: 360px;
+    width: 0.3125rem;
+    height: 0.3125rem;
+}
+
+td {
+    text-align: right;
+}
+
+table {
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+.PI {
+    padding: 3.125rem;
+    color: #000;
+    font-weight: bold;
+    border-radius: 0.625rem;
+    width: 31.25rem;
+    margin: 31.25rem;
+    text-align: center;
+}
+
+div.gallery {
+    display: inline-block;
+    width: 45%;
+    margin: 10px;
+    border: 1px solid #afd2e9;
+ }
+ 
+ 
+ div.gallery:hover {
+    border: 1px solid #add6ff;
+ }
+ 
+ 
+ div.gallery img {
+    width: 100%;
+    height: auto;
+ }
+ 
+ 
+ div.desc {
+    padding: 15px;
+    text-align: center;
  }
  
