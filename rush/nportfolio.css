@@ -25,6 +25,12 @@
     }
 }
 
+/*$ set*/
+
+
+
+
+/* nav bar*/
 ul {
     list-style-type: none;
     margin: 0;
@@ -67,6 +73,8 @@ li a:hover:not(.active) {
 .active {
     background-color: #000;
 }
+/*$ nav bar*/
+
 
 /* Background Section */
 .background {
@@ -84,26 +92,31 @@ li a:hover:not(.active) {
     opacity: 1.0;
 }
 
-.bg2 {
-    background-color: azure;
-}
-
-.bg3 {
-    background-color: rgb(62, 114, 116);
-    opacity: 1.0;
-    color: aliceblue;
+.backgroundinfo {
+    height: 50rem;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
 }
 
 /* Text Box */
-.texthi {
-    padding: 3.125rem;
-    color: #000;
-    font-weight: bold;
+.Hometext{
     background-color: aliceblue;
-    border-radius: 0.625rem;
-    width: 31.25rem;
-    margin: auto;
+    color: #000;
     text-align: center;
+    font-weight: bold;
+    width: 31.25rem;
+    padding: 3.125rem;
+    margin: auto;
+    border-radius: 0.625rem;
+    line-height: 2rem;
 }
 
 /* Content Section */
@@ -155,20 +168,7 @@ table {
     text-align: center;
 }
 
-/* แก้ไข .gallery เพื่อจัดตำแหน่งให้อยู่กลาง */
-.background1 {
-    height: 50rem;
-    width: 100%;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* จัดแกลเลอรี่ให้อยู่กลาง */
-    align-items: center;
-    background-color: aliceblue;
-}
+
 #certificates {
     display: flex;
     justify-content: center; /* จัดทั้งหมดใน .gallery ให้อยู่กลาง */
@@ -204,13 +204,9 @@ div.desc {
 }
 
 .background2 {
+    background-color: white;
     background-size: cover; /* ทำให้ภาพขยายให้เต็มหน้าจอ */
     background-position: center; /* ตั้งค่าพื้นหลังให้อยู่กลาง */
     background-attachment: fixed; /* ทำให้พื้นหลังคงที่เมื่อเลื่อน */
-    height: 50rem; /* กำหนดความสูงของพื้นหลัง */
-    width: 100%; /* ทำให้กว้างเต็มหน้าจอ */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: aliceblue; /* สีพื้นหลังในกรณีที่ภาพไม่สามารถโหลดได้ */
+
 }
