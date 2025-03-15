@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>backgroundchange</title>
+        <link rel="stylesheet" href="background.css">
+    </header>
+    <body>
+        <button type="button" onclick="ramdomcolour()">click me!!</button>
+        <script>
+            function ramdomcolour(){
+                const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+                document.body.style.backgroundColor = randomColor;
+            }
+        </script>
+        
+    </body>
+</html>
