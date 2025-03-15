@@ -1,5 +1,5 @@
 html {
-    font-family: monospace;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
@@ -11,17 +11,17 @@ h2 {
     background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px;
+    box-shadow: 0 0  0.625rem;
     box-shadow: #090c02;
     width: 50%;
-    height: 200%;
+    height: 100%;;
 }
 
 .image{
     width: 50%;
     height: auto;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 0.625;
 }
 
 p{
@@ -30,4 +30,19 @@ p{
 
 .inline{
     margin: 5px;
+}
+
+button{
+    width: 100%;
+    color: aliceblue;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #23283e;
+    justify-items: center;
+    border: #090c02;
+    border-radius: 10px;
+}
+
+button a:hovers {
+    background-color: #46636c;
 }
